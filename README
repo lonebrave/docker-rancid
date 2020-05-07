@@ -2,5 +2,6 @@ How to use this container
 
 Update volumes in the docker-compose.yml file if you want your volume source somewhere other than $PWD
 Create rancid-secrets/.cloginrc
+Modify root/.gitconfig
 Modify etc/rancid/rancid.conf
 Run the stack
