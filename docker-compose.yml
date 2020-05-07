@@ -6,6 +6,7 @@ services:
       - "$PWD/etc/rancid/rancid.conf:/etc/rancid/rancid.conf"
       - "$PWD/var/rancid:/var/rancid"
       - "$PWD/rancid-secrets/.cloginrc:/root/.cloginrc"
+      - "$PWD/rancid-secrets/.gitconfig:/root/.gitconfig"
     deploy:
       mode: replicated
       replicas: 1
