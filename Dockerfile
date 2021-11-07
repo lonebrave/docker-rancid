@@ -1,6 +1,6 @@
 FROM alpine
 
-LABEL maintainer Nick Hasser <nick.hasser@gmail.com>t
+LABEL maintainer Nick Hasser <nick.hasser@gmail.com>
 
 RUN apk update && \
     apk add git openssh-client man man-pages rancid rancid-doc&& \
