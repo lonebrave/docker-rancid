@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  rancid:
+    image: nickhasser/rancid
+    volumes:
+      - "$PWD/etc/rancid/rancid.conf:/etc/rancid/rancid.conf"
+      - "$PWD/var/rancid:/var/rancid"
+      - "$PWD/rancid-secrets/.cloginrc:/root/.cloginrc"
+      - "$PWD/root/.gitconfig:/root/.gitconfig"
+    deploy:
+      mode: replicated
+      replicas: 1

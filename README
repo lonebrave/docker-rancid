@@ -1,0 +1,8 @@
+How to use this container
+
+Update volumes in the docker-compose.yml file if you want your volume source somewhere other than $PWD
+Create rancid-secrets/.cloginrc
+Modify root/.gitconfig
+Modify etc/rancid/rancid.conf
+Add ssh keys to root/.ssh/ if you want to use key-based SSH authentication for pushing to a remote repository.
+Run the container manually or via docker-compose
