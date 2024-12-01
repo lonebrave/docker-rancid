@@ -1,6 +1,7 @@
 FROM alpine:3.20.3
 
-LABEL maintainer Nick Hasser <nick.hasser@gmail.com>
+LABEL ort.opencontainers.image.authors="nick.hasser@gmail.com"
+LABEL version="5.0.0"
 
 RUN apk update && apk upgrade && apk add \ 
     git \
