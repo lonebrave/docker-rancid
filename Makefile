@@ -1,17 +1,17 @@
 NAME = nickhasser/rancid
-DATE = $(shell date -I)
+VERSION = $(shell date -I)
 LOCALDIR = `pwd`
 
-default: build
+default: build-latest
 
 build:
-	docker build -t $(NAME):$(DATE) .
+	docker build -t $(NAME):$(VERSION) .
 
 build-latest:
 	docker build -t $(NAME) .
 
 push:
-	docker push $(NAME):$(DATE)
+	docker push $(NAME):$(VERSION)
 
 push-latest:
 	docker push $(NAME)
