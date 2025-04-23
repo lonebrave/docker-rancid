@@ -1,7 +1,7 @@
-FROM alpine:3.20.3
+FROM alpine:3.21.3
 
 LABEL ort.opencontainers.image.authors="nick.hasser@gmail.com"
-LABEL version="5.0.0"
+LABEL version="5.0.1"
 
 RUN apk update && apk upgrade && apk add \ 
     git \
